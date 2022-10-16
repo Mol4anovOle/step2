@@ -485,8 +485,8 @@ function seo_metabox_callback($post)
     if (!empty($data)) {
         $contents = json_decode(html_entity_decode($data), TRUE); ?>
         <select id="seo_title" name="seo_title">
-            <?php foreach ($contents as $key => $value) { ?>
-                <option value="<?php echo $key ?>"
+            <?php foreach ($contents as  $value) { ?>
+                <option value="<?php echo $value ?>"
                     <?php if ($seo_title == $value) {
                         echo 'selected';
                     } ?>
